@@ -1,3 +1,15 @@
 from django.contrib import admin
+from .models import Telemetry
 
-# Register your models here.
+
+@admin.register(Telemetry)
+class TelemetryAdmin(admin.ModelAdmin):
+    list_display = (
+        "timestamp",
+        "temperature",
+        "humidity",
+        "latitude",
+        "longitude",
+    )
+
+    ordering = ("-timestamp",)
