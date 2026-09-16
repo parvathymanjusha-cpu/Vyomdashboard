@@ -13,7 +13,7 @@ SERIAL_PORT = "COM5"
 # Matches the real receiver and fake ESP32
 BAUD_RATE = 9600
 
-DJANGO_URL = https://vyomdashboard.onrender.com/api/telemetry/
+DJANGO_URL = "https://vyomdashboard.onrender.com/api/telemetry/"
 
 SERIAL_TIMEOUT = 1
 
