@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-d91um@!ba#6aoh(0(^r#!8+^q)9zkue%t4eps$18%a$rii&*cx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["vyomdashboard.onrender.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
