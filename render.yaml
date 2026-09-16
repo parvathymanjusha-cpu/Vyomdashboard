@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: vyomdashboard
+    env: python
+    buildCommand: pip install -r requirements.txt && python manage.py migrate
+    startCommand: gunicorn cubesat_site.wsgi:application
+    plan: free
